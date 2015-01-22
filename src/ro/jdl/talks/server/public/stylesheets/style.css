@@ -1,0 +1,113 @@
+body, html {
+	margin: 0;
+  font: 14px "Helvetica";
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url('/images/home.jpg');
+  background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+html .mask {
+	width: 100%
+	z-index: -1;
+}
+
+html .mask:after {
+	content: "";
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAHUlEQVQIW2NkYGD4D8SM6DRIAAQwJDFUwhRRUQcALRkSBISGlPAAAAAASUVORK5CYII=") repeat top left;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: .5;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.brand {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.logo {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.logo h1 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-size: 60px;
+}
+
+.logo h1.large {
+	padding-top: 0;
+	margin-top: 0;
+	font-size: 500px;
+}
+
+.logo-img {
+	margin: 0 auto;
+	width: 500px;
+	margin-top: 120px;
+}
+
+.social {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 220px;
+	/*border-top: 1px solid #ccc;*/
+}
+
+.feed {
+	box-sizing: border-box;
+	padding: 20px 100px;
+	width: 100%;
+}
+
+.tweet {
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.tweet .photo {
+	width: 20%;
+	height: 100px;
+	display: inline;
+	float: left;
+}
+
+.tweet .text {
+	box-sizing: border-box;
+	width: 80%;
+	height: 100px;
+	display: inline;
+	float: left;
+	padding: 0 10px;
+}
+
+.tweet .text h3 {
+	margin-top: 5px;
+}
+
+.author {
+	width: 70px;
+	border-radius: 8px;
+}
